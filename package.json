@@ -1,0 +1,19 @@
+{
+  "name": "awaredb-docs",
+  "version": "1.0.0",
+  "description": "Documentation site for AwareDB — a computational model graph.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@astrojs/starlight": "^0.34.8",
+    "astro": "^5.18.1",
+    "sharp": "^0.34.5"
+  }
+}

@@ -1,0 +1,26 @@
+---
+// Custom site title: the full AwareDB lockup (mark + wordmark) with light/dark
+// variants. text-*.svg already contains the mark, so it's used on its own.
+const { siteTitle, siteTitleHref } = Astro.locals.starlightRoute;
+---
+
+<a href={siteTitleHref} class="site-title sl-flex" translate="no">
+  <img class="logo-lockup dark:sl-hidden" alt={siteTitle} src="/logos/text-dark.svg" />
+  <img class="logo-lockup light:sl-hidden" alt={siteTitle} src="/logos/text-light.svg" />
+</a>
+
+<style>
+  .site-title {
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    min-width: 0;
+  }
+  .logo-lockup {
+    height: calc((var(--sl-nav-height) - 2 * var(--sl-nav-pad-y)) * 0.62);
+    /* The SVGs carry only a viewBox (no width/height), so pin the ratio here —
+       otherwise the <img> width can collapse to 0 after layout and vanish. */
+    aspect-ratio: 5 / 1;
+    width: auto;
+  }
+</style>

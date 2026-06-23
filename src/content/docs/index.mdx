@@ -1,0 +1,60 @@
+---
+title: AwareDB
+description: AwareDB is a computational model graph — model a system as entities, relations and formulas that compute, with units, states, reversible history and what-if analysis.
+template: splash
+hero:
+  tagline: A computational model graph. Model a system as nodes, relations and formulas — then compute it, with units, states, reversible history, and what-if on demand.
+  actions:
+    - text: Quickstart
+      link: /start/quickstart/
+      icon: right-arrow
+    - text: What you can do
+      link: /outcomes/model/
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+A storage graph holds relationships. A spreadsheet computes but can't model a
+graph or carry units. AwareDB is the one that does both: a headless graph where
+every node carries **unit-aware formulas**, can exist in **multiple states at
+once**, computes **deterministically**, keeps a **reversible history**, and
+answers **what-if** questions — over a REST API or the Python SDK.
+
+It's the deterministic engine an app or AI agent asks to get a real, auditable,
+unit-correct answer — instead of guessing.
+
+<CardGrid stagger>
+  <Card title="See what it's for" icon="open-book">
+    Organized by outcome, not by function: model a system, run what-if, forecast,
+    optimize. [Start with the outcomes](/outcomes/model/).
+  </Card>
+  <Card title="Build your first model" icon="rocket">
+    Install the SDK, push a few nodes with formulas, and read back computed values.
+    [Quickstart](/start/quickstart/).
+  </Card>
+  <Card title="Core concepts" icon="puzzle">
+    Nodes, properties, values, relations, states, units, history — the vocabulary.
+    [Learn the model](/concepts/core-concepts/).
+  </Card>
+  <Card title="Reference" icon="seti:python">
+    The Python SDK, the REST command API, the analyses, and the formula functions.
+    [Read the reference](/reference/python-sdk/).
+  </Card>
+</CardGrid>
+
+## What you can do with AwareDB
+
+Three engineering teams model a car independently — batteries, motors, chassis —
+and AwareDB recombines them into one model that carries every configuration at
+once (eco vs sport, standard vs long-range) and computes range, top speed and
+acceleration per configuration, in correct units. A founder models MRR, burn and
+runway as connected formulas, then asks "what's our runway if we hire five
+engineers?" and gets an answer without touching the stored model. Each of these
+is the same shape: **model it once, compute it deterministically, then ask it
+anything.**
+
+Where it sits: AwareDB is the calculation engine. Turning scattered documents,
+emails and systems *into* a model is a separate layer (kernel); building apps on
+top is another. AwareDB is the part that computes — and it stands on its own.
