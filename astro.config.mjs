@@ -70,8 +70,12 @@ export default defineConfig({
         {
           label: 'Examples',
           items: [
+            { label: 'Overview', slug: 'examples' },
             { label: 'Electric car', slug: 'examples/electric-car' },
+            { label: 'Train BOM', slug: 'examples/train-bom' },
+            { label: 'Accounting firm', slug: 'examples/accounting-firm' },
             { label: 'SaaS startup', slug: 'examples/saas-startup' },
+            { label: 'Portfolio allocation', slug: 'examples/portfolio' },
           ],
         },
         {
